@@ -1,0 +1,10 @@
+.items {
+  background-color: #eca520;
+  margin: 10px;
+}
+
+.box {
+  border: 1px;;
+  border-color: red;
+  border-style: solid;
+}

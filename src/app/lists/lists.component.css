@@ -1,0 +1,73 @@
+.btn {
+  cursor: pointer;
+}
+.image img {
+  width: 6em;
+  height: 4em;
+}
+.image {
+  min-width: 6.5em;
+  min-height: 4em;
+}
+
+.list-item {
+  /* margin: 0.4em; */
+  min-height: 6.5em;
+  border-bottom: rgb(110, 105, 105) 1px solid;
+}
+.titles, .labels, .button, .image {
+  overflow: hidden;
+  margin: 0.2em;
+  /* padding: 0.2em; */
+  /* height: 6em; */
+  /* border-bottom: rgb(110, 105, 105) 1px solid; */
+}
+.label,
+.titles .labels {
+  width: 4em;
+  height: 2em;
+  background-color: rgba(127, 255, 212, 0.63);
+  text-align: center;
+  border-radius: 4px;
+}
+.button {
+  position: relative;
+  display: inline-block;
+}
+#menu {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 50% !important;
+}
+button.mat-menu-item {
+  max-width: 5em !important;
+}
+.location, p {
+  font-size: 16px;
+  color: rgb(110, 105, 105) !important;
+}
+
+::ng-deep .dropdown {
+  min-width: initial !important;
+  position: relative !important;
+  min-height: initial !important;
+  height: 30px !important;
+  width: 70px !important;
+  /* transform: translate(-50%,100%) !important; */
+}
+::ng-deep .dropdown-content {
+  width: 70px !important;
+  position:  relative !important;
+  z-index: 100 !important;
+  text-align: center !important;
+  background-color: rgba(15, 15, 15, 0.2);
+  border-radius: 4px !important;
+  /* box-shadow: 0px 8px 16px 0px rgba(7, 7, 7, 0.726) !important; */
+}
+
+::ng-deep .menu-item, .menu-item a {
+  padding: 0 !important;
+  height: 30px !important;
+  z-index: 100 !important;
+}

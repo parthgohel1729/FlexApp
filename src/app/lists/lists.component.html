@@ -1,0 +1,43 @@
+
+<div class="list" fxLayout="column" style="height: 100%;">
+  <div fxLayout="row" class="list-item" fxLayoutAlign="center"
+   *ngFor="let location of locations">
+
+    <div class="image" fxLayoutAlign="center center" fxFlex="13" fxLayoutAlign.lt-md="center baseline">
+      <img class="img-responsive" src="../../assets/images/image-1.jpg">
+    </div>
+
+    <div class="titles" fxLayoutAlign="left center" fxFlex="auto"
+    fxLayout.lt-md="column" fxLayoutAlign.lt-md="left" fxFlex.lt-md="70">
+      <div>
+        <h3>{{location.title}}</h3>
+        <p><mat-icon class="location">location_on</mat-icon>{{location.subtitle}}</p>
+      </div>
+      <div class="labels" fxShow.lt-md fxHide>
+        <mat-label class="label">Parent</mat-label>
+      </div>
+    </div>
+
+    <div class="labels" fxLayoutAlign="center center" fxHide.lt-md fxFlex="10">
+      <mat-label class="label">Parent</mat-label>
+    </div>
+
+    <div class="button" fxLayoutAlign="center center" fxLayoutAlign.lt-md="end baseline"
+     fxFlex="15" fxFlex.lt-md="noshrink">
+      <button class="btn" mat-button (click)="sidenav.toggle()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-sidenav-container class="dropdown" fxFlexFill fxFlex.lt-md="noshrink" >
+        <mat-sidenav class="dropdown-content" #sidenav >
+          <mat-nav-list class="menu-item">
+            <a (click)="sidenav.toggle()">Delete</a>
+          </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content></mat-sidenav-content>
+      </mat-sidenav-container>
+    </div>
+
+  </div>
+</div>
+
+
